@@ -1,4 +1,46 @@
-.navbar {
-  background-color: #212529 !important;
-  opacity: 0.33;               /* Good browsers */
+#mainNav {
+  background-color: rgba(0, 0, 0, 0.33) !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: white;
+}
+
+.logo {
+  height: 60px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.masthead {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  video {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 24px;
+  }
+  .masthead {
+    margin-top: 87px;
+    padding: 0;
+  }
+  .masthead video {
+    width: 100%;
+    position: inherit;
+  }
+  #mainNav {
+    background-color: black !important;
+  }
+  section {
+    padding: 4rem 0;
+  }
 }
