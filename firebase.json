@@ -4,6 +4,10 @@
     "ignore": [
       "indexTemplate.html"
     ],
+    "rewrites": [ {
+      "source": "**/!(*.css|*.js|*.mp4|*.map|*.jpg|*.gif|*.png)",
+      "destination": "/index.html"
+    } ],
     "headers": [ {
       "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
       "headers" : [ {
