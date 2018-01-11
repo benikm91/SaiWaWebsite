@@ -9,7 +9,7 @@ const extractSCSS = new ExtractTextPlugin('[name]-two.css');
 
 const ccpOptions = {
     name: 'vendor',
-    path: __dirname + "/public/dist",
+    path: __dirname + "/public",
     filename: 'vendor.bundle.js'
 };
 
@@ -22,7 +22,7 @@ module.exports = {
         "app": "./app/main"
     },
     output: {
-        publicPath: '.',
+        publicPath: '/public',
         path: __dirname + "/public",
         filename: "[name].bundle.js"
     },
@@ -67,7 +67,7 @@ module.exports = {
                 test: /\.scss$/,
                 use: extractSCSS.extract([ 'css-loader', 'sass-loader' ])
             },
-            { test: /\.(png|woff|woff2|eot|ttf|svg|mp4)$/, loader: 'url-loader?limit=100000&name=[hash].[ext]' },
+            { test: /\.(png|woff|woff2|eot|ttf|svg|mp4)$/, loader: 'url-loader?limit=100000&name=public/[hash].[ext]' },
             {
                 test: /\.json5$/,
                 loader: 'json5-loader'
@@ -100,8 +100,8 @@ module.exports = {
         // }),
 
         new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: 'public/indexTemplate.html'
+            filename: '../index.html',
+            template: 'indexTemplate.html'
         }),
 
         new CompressionPlugin({

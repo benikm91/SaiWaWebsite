@@ -1,8 +1,10 @@
 {
   "hosting": {
-    "public": "public",
+    "public": ".",
     "ignore": [
-      "indexTemplate.html"
+      "**",
+      "!public/**",
+      "!index.html"
     ],
     "rewrites": [ {
       "source": "**/!(*.css|*.js|*.mp4|*.map|*.jpg|*.gif|*.png)",

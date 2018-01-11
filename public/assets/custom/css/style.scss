@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Orena Solo Mayusculas";
+  src: url("/public/assets/custom/font/OrenaSoloMayusculas.ttf") format("ttf");
+}
+
+h1, h2, h3, h4, h5, h6, body, p, div {
+  font-family: "Orena Solo Mayusculas";
+}
+
 #mainNav {
   background-color: rgba(0, 0, 0, 0.33) !important;
 }
