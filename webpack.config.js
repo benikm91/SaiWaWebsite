@@ -67,7 +67,7 @@ module.exports = {
                 test: /\.scss$/,
                 use: extractSCSS.extract([ 'css-loader', 'sass-loader' ])
             },
-            { test: /\.(png|woff|woff2|eot|ttf|svg|mp4)$/, loader: 'url-loader?limit=100000&name=public/[hash].[ext]' },
+            { test: /\.(png|woff|woff2|eot|ttf|svg|mp4)$/, loader: 'url-loader?limit=100000&name=/[hash].[ext]' },
             {
                 test: /\.json5$/,
                 loader: 'json5-loader'
