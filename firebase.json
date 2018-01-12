@@ -2,12 +2,10 @@
   "hosting": {
     "public": ".",
     "ignore": [
-      "**",
-      "!public/**",
-      "!index.html"
+      "**/node_modules/**"
     ],
     "rewrites": [ {
-      "source": "**/!(*.css|*.js|*.mp4|*.map|*.jpg|*.gif|*.png)",
+      "source": "**/!(*.css|*.js|*.mp4|*.map|*.jpg|*.gif|*.png|*.eot|*.otf|*.ttf|*.ttc|*.woff)",
       "destination": "/index.html"
     } ],
     "headers": [ {
