@@ -36,10 +36,10 @@
     "zone.js": "^0.8.20"
   },
   "devDependencies": {
-    "@angular/cli": "^1.6.3",
+    "@angular/cli": "^1.6.4",
     "@angular/compiler-cli": "^4.4.6",
-    "@ngtools/webpack": "^1.9.3",
-    "@types/core-js": "0.9.35",
+    "@ngtools/webpack": "^1.9.4",
+    "@types/core-js": "^0.9.35",
     "@types/node": "^7.0.52",
     "@ultimate/aot-loader": "^0.1.16",
     "angular-router-loader": "^0.6.0",
@@ -54,7 +54,7 @@
     "file-loader": "^0.11.2",
     "html-loader": "^0.4.5",
     "html-webpack-plugin": "^2.30.1",
-    "imagemin-webpack-plugin": "^1.5.2",
+    "imagemin-webpack-plugin": "^1.6.0",
     "json5": "^0.5.1",
     "json5-loader": "^1.0.1",
     "ngc": "^1.0.0",
@@ -62,13 +62,13 @@
     "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "ts-loader": "2.0.1",
+    "ts-loader": "^2.0.1",
     "tslint": "^5.9.1",
     "typescript": "^2.6.2",
     "url-loader": "^0.5.9",
     "webpack": "^2.7.0",
     "webpack-bundle-analyzer": "^2.9.2",
-    "webpack-dev-server": "^2.10.1",
+    "webpack-dev-server": "^2.11.0",
     "yargs": "^10.1.1"
   }
 }
